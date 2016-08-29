@@ -7,7 +7,7 @@ module.exports = function(grunt) {
         separator: ';'
       },
       dist: {
-        src: ['templates/js/*.js'],
+        src: ['js/*.js'],
         dest: 'compiled-dev/js'
       }
     },
@@ -38,7 +38,7 @@ module.exports = function(grunt) {
     },
 
     jshint: {
-      files: ['Gruntfile.js', 'templates/js/*.js', 'test/**/*.js'],
+      files: ['Gruntfile.js', 'js/*.js', 'test/**/*.js'],
       options: {
         // options here to override JSHint defaults
         globals: {
@@ -51,7 +51,7 @@ module.exports = function(grunt) {
     },
 
     watch: {
-      files: ['styles/**/*.sass', '**/*.js'],
+      files: ['styles/**/*.sass', 'js/*.js'],
       tasks: ['sass', 'uglify'],
       options: {
         event: ['added', 'deleted', 'changed']
