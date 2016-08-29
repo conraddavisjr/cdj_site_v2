@@ -11,9 +11,7 @@ $(document)
       console.log('dragging');    
       console.log('X position', e.clientX);
       console.log('Y position', e.clientY);
-      $camera.css('transform', 'rotateY(' + e.clientY + 'deg' + ')' + 'scale(' + 0.5 + ')' + 'translateX(' + '12em)' + 'translateY(' + '-10em)' + 'translateZ(-10em' + ')');
-        // $('.user-text').css('transform', 'scale(' + ui.value + ')');
-        // 'scale(' + 0.5 + ')' + 'translateX(' + 12em + ')' + 'translateY(' + -10em + ')' + 'translateZ(' + -10em + ')';
+      $camera.css('transform', 'rotateY(' + e.clientY + 'deg' + ')' /*+ 'rotateX(' + e.clientX + 'deg' + ')'*/ + 'scale(' + 0.5 + ')' + 'translateX(' + '12em)' + 'translateY(' + '-10em)' + 'translateZ(-10em' + ')');
     }
  })
 .mouseup(function() {
