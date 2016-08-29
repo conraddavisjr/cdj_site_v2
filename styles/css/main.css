@@ -43,8 +43,9 @@
   height: 40em;
   width: 70em;
   background-color: #16a4b3;
-  transform: rotateY(-90deg) translateZ(72.7em) translateY(23em) translateX(30em) rotate(-40deg);
+  transform: rotateY(-90deg) translateZ(72.6em) translateY(23em) translateX(30em) rotate(-40deg);
   transform-origin: top right;
+  -webkit-clip-path: polygon(100% 0%, 63.5% 76.5%, 0% 100%, 46% 0%);
 }
 
 /*# sourceMappingURL=main.css.map */
